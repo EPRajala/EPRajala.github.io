@@ -12,12 +12,10 @@ links to social networks etc.
 The website is static and hosted in GitHub Pages, it was made 
 with HTML, CSS and a dash of JavaScript embedded within HTML
 
-
 ==URL==
-<url here>
-
+https://eprajala.github.io/
 
 ==AUTHOR==
 Elias Rajala
 
-Copyright © 2024 Elias Rajala
+Copyright Â© 2024 Elias Rajala
