@@ -1,11 +1,10 @@
 body{
 	margin: 0;
-	background-color: #1d2a35;
 	text-align: center;
 	font-family: Helvetica;
-	font-weight: bold;
 	color: #0be4a7;
-	
+	background-color: #1d2a35;
+
 	/* Image taken by Valdemaras D. (Free to use, see Pexels license)*/
 	background-image: url("images/background_image.jpg"); 
 	background-repeat: no-repeat;
@@ -22,10 +21,27 @@ a{
 	color: #0be4a7;
 	text-decoration: none;
 	font-size: 1rem;
+	font-weight: bold;
 }
 
 a:hover{
 	text-shadow: 0 0 10px;	
+}
+
+table, th, td{
+	background-color: #1d2a35;
+  border: 1px solid #0be4a7;
+  border-collapse: collapse;
+	padding: 3px 5px 3px 5px;
+  margin-left: auto;
+  margin-right: auto;
+	margin-bottom: 30px;
+}
+
+hr{
+	color: #0be4a7;
+	height: 3px;
+	width: 50%;
 }
 
 header{
@@ -85,13 +101,6 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-footer {
-	font-size: 0.8rem;
-  text-align: center;
-  padding: 1px;
-  background-color: #1d2a35;
 }
 
 /* Content */
