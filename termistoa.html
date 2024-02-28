@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="description" content="Moro, olen Elias Rajala! Materiaalitekniikan DI-opiskelija, polymeeri-intoilija ja yleinen tekniikkanörtti. Tervetuloa kotisivulleni.">
-		<meta name="keywords" content="Elias Rajala, Materiaalitekniikka, Ansioluettelo, Rajala">
+		<meta name="keywords" content="Elias Rajala, Rajala, Materiaalitekniikka, Ansioluettelo, CV, Kotisivut, Personal website">
 		<meta name="author" content="Elias Rajala">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Elias Rajala</title>
@@ -38,15 +38,345 @@
 		<main>
 			<section id="content">
 				<h1>Materiaalitekniikan termistöä</h1>
-				<p>Tähän olen koonnut materiaalitekniikan nimistöä ja termistöä oman muistini virkistykseksi ja tietoa etsivien avuksi.<br>
-				Listaa päivitetään satunnaisen epäsatunnaisesti, eikä se (vielä) kata kaikkea alan sanastoa.</p>
+				<p>Tähän olen koonnut materiaalitekniikan suureita, kaavoja ja termistöä oman muistini virkistykseksi ja niitä etsivien avuksi.<br>Listaa päivitetään satunnaisen epäsatunnaisesti, eikä se toistaiseksi ole perinpohjainen.</p>
+				
+				<!--
+				Miten kirjoittaa symboleita ja matemaattisia kaavoja puhtaalla HTML:llä:
+
+				Kreikkalainen kirjain: &sigma; (alkukirjaimen koolla voit määrittää onko kirjain iso vai pieni)
+				Muuttuja (=italisointi): <var>x</var>
+				Alaindeksi: A<sub>0</sub>
+				Yläindeksi: x<sup>2</sup>
+				Nuoli oikealle: &rarr;
+				-->
+
+				<h3>Suureita ja symboleita</h3>
+				<table>
+					<tr>
+						<th>SUURE</th>
+						<th>TUNNUS</th>
+						<th>YKSIKKÖ</th>
+					</tr>
+					<tr>
+						<td>Jännitys</td>
+						<td><var>&sigma;</var></td>
+						<td>Pa (N/m<sup>2</sup>)</td>
+					</tr>
+					<tr>
+						<td>Venymä</td>
+						<td><var>&epsilon;</var></td>
+						<td>mm/mm</td>
+					</tr>
+					<tr>
+						<td>Kimmokerroin (Youngin moduuli)</td>
+						<td><var>E</var></td>
+						<td>MPa tai GPa</td>
+					</tr>
+					<tr>
+						<td>Leikkausjännitys</td>
+						<td><var>&tau;</var></td>
+						<td>Pa (N/m<sup>2</sup>)</td>
+					</tr>
+					<tr>
+						<td>Kriittinen leikkausjännitys</td>
+						<td><var>&tau;</var><sub>crss</sub></td>
+						<td>Pa (N/m<sup>2</sup>)</td>
+					</tr>
+					<tr>
+						<td>Leikkausvenymä</td>
+						<td><var>&gamma;</var></td>
+						<td>mm/mm</td>
+					</tr>
+					<tr>
+						<td>Leikkausmoduuli (Liuku-)</td>
+						<td><var>G</var></td>
+						<td>MPa tai GPa</td>
+					</tr>
+					<tr>
+						<td>Bulkkimoduuli</td>
+						<td><var>K / B</var></td>
+						<td>MPa tai GPa</td>
+					</tr>
+					<tr>
+						<td>Myötölujuus</td>
+						<td><var>&sigma;<sub>y</sub> / R<sub>e</sub></var></td>
+						<td>MPa</td>
+					</tr>
+					<tr>
+						<td>Murtolujuus</td>
+						<td><var>&sigma;<sub>m</sub> / R<sub>m</sub> / UTS</var></td>
+						<td>MPa</td>
+					</tr>
+					<tr>
+						<td>Kokonaistasavenymä</td>
+						<td><var>&epsilon;<sub>m</sub> / A<sub>gt</sub></var></td>
+						<td>mm/mm</td>
+					</tr>
+					<tr>
+						<td>Kokonaisvenymä (murtohetkellä)</td>
+						<td><var>&epsilon;<sub>f</sub> / A<sub>t</sub></var></td>
+						<td>mm/mm</td>
+					</tr>
+					<tr>
+						<td>Murtovenymä (plastinen)</td>
+						<td><var>A</var></td>
+						<td>mm/mm</td>
+					</tr>
+					<tr>
+						<td>Kokonaisvenymä kun ekstensometrin mittapituus on 80mm</td>
+						<td><var>A<sub>80</sub></var></td>
+						<td>mm/mm</td>
+					</tr>
+					<tr>
+						<td>Brinell-kovuus (kuula)</td>
+						<td></td>
+						<td>HB</td>
+					</tr>
+					<tr>
+						<td>Vickers-kovuus (pyramidi)</td>
+						<td></td>
+						<td>HV</td>
+					</tr>
+					<tr>
+						<td>Rockwell-kovuus (pyramidi tai kuula)</td>
+						<td></td>
+						<td>HR</td>
+					</tr>
+					<tr>
+						<td>Poissonin vakio</td>
+						<td><var>&nu;</var></td>
+						<td>yksikötön</td>
+					</tr>
+					<tr>
+						<td>Sitoutunut energia (embodied energy)</td>
+						<td><var>H<sub>m</sub></var></td>
+						<td>MJ / kg</td>
+					</tr>
+					<tr>
+						<td>Hiilijalanjälki</td>
+						<td></td>
+						<td>kg(CO<sub>2</sub>ekv) / kg</td>
+					</tr>
+				</table>
+				
+				<hr>
+				
+				<h3>Kaavoja</h3>
+				<table>
+					<tr>
+						<th>SUURE</th>
+						<th>KAAVA</th>
+					</tr>
+					<tr>
+						<td>Insinöörijännitys</td>
+						<td><var>&sigma; (&sigma;<sub>e</sub>) = F / A<sub>0</sub></var></td>
+					</tr>
+					<tr>
+						<td>Todellinen jännitys</td>
+						<td><var>&sigma;<sub>t</sub> = F / A = &sigma;<sub>e</sub></var>(1 + <var>&epsilon;<sub>e</sub></var>)</td>
+					</tr>
+					<tr>
+						<td>Insinöörivenymä</td>
+						<td><var>&epsilon; (&epsilon;<sub>e</sub>) = &Delta;l / l<sub>0</sub></var></td>
+					</tr>
+					<tr>
+						<td>Todellinen venymä</td>
+						<td><var>&epsilon;<sub>t</sub></var> = ln(1 + <var>&epsilon;<sub>e</sub></var>)</td>
+					</tr>
+					<tr>
+						<td>Kimmokerroin (Youngin moduuli)</td>
+						<td><var>E = &sigma; / &epsilon;</var></td>
+					</tr>
+					<tr>
+						<td>Leikkausmoduuli (Liuku-)</td>
+						<td><var>G = &tau; / &gamma; = E / 2(1 + <var>&nu;</var>)</var></td>
+					</tr>
+					<tr>
+						<td>Bulkkimoduuli</td>
+						<td><var>K = E / 3(1 - 2<var>&nu;</var>)</td>
+					</tr>
+					<tr>
+						<td>Poissonin vakio</td>
+						<td><var>&nu; = -&epsilon;<sub>x</sub> / &epsilon;<sub>z</sub> = -&epsilon;<sub>y</sub> / &epsilon;<sub>z</sub></var></td>
+					</tr>
+					<tr>
+						<td>Schmidin laki (m=orientaatiotekijä)</td>
+						<td><var>&tau;</var><sub>crss</sub> = &sigma;<sub>y</sub> / m</td>
+					</tr>
+					<tr>
+						<td>Hall-Petch yhtälö (raekoon [d] vaikutus lujuuteen)</td>
+						<td><var>&sigma;<sub>y</sub> = &sigma;<sub>0</sub> + k<sub>y</sub></var> / sqrt(<var>d</var>)</td>
+					</tr>
+				</table>
+				
+				<hr>
+				
+				<h3>Polymeerejä</h3>
+				<p>Päätteitä: -LD (matalatiheyksinen), -LLD (lineaarinen matalatiheyksinen), -HD (korkeatiheyksinen), <br> -HI (iskunkestävä), -E (solustettu), <br> -a (ataktinen eli amorfinen), -i (isotaktinen), -s (syndiotaktinen). <br> Vaahtoon saatetaan viitata päätteen '-E' sijasta kirjaimella 'F' (PU-E &rarr; PUF). <br> Vanhanaikaista nimeämistapaa (vanha: LDPE, moderni: PE-LD) esiintyy yhä laajalti</p>
+				<table>
+					<tr>
+						<th>POLYMEERI</th>
+						<th>LYHENNE</th>
+					</tr>
+					<tr>
+						<td>akryylinitriili/butadieeni/styreenikopolymeeri</td>
+						<td>ABS</td>
+					</tr>
+					<tr>
+						<td>butadieenikumi</td>
+						<td>BR</td>
+					</tr>
+					<tr>
+						<td>neopreeni (kloropreenikumi)</td>
+						<td>CR</td>
+					</tr>
+					<tr>
+						<td>isopreenikumi</td>
+						<td>IR</td>
+					</tr>
+					<tr>
+						<td>akryylinitriili/butadieenikumi (nitriilikumi)</td>
+						<td>NBR</td>
+					</tr>
+					<tr>
+						<td>luonnonkumi</td>
+						<td>NR</td>
+					</tr>
+					<tr>
+						<td>polyamidi</td>
+						<td>PA</td>
+					</tr>
+					<tr>
+						<td>polyakryylinitriili</td>
+						<td>PAN</td>
+					</tr>
+					<tr>
+						<td>polybutyleenitereftalaatti</td>
+						<td>PBT</td>
+					</tr>
+					<tr>
+						<td>polykarbonaatti</td>
+						<td>PC</td>
+					</tr>
+					<tr>
+						<td>polykaprolaktoni</td>
+						<td>PCL</td>
+					</tr>
+					<tr>
+						<td>polyeteeni</td>
+						<td>PE</td>
+					</tr>
+					<tr>
+						<td>poly(eetterieetteriketoni)</td>
+						<td>PEEK</td>
+					</tr>
+					<tr>
+						<td>polyetyleenitereftalaatti</td>
+						<td>PET</td>
+					</tr>
+					<tr>
+						<td>fenoliformaldehydi (bakeliitti)</td>
+						<td>PF</td>
+					</tr>
+					<tr>
+						<td>polyimidi</td>
+						<td>PI</td>
+					</tr>
+					<tr>
+						<td>polylaktidi</td>
+						<td>PLA</td>
+					</tr>
+					<tr>
+						<td>polymetyylimetakrylaatti</td>
+						<td>PMMA</td>
+					</tr>
+					<tr>
+						<td>polyoksimetyleeni (polyformaldehydi)</td>
+						<td>POM</td>
+					</tr>
+					<tr>
+						<td>polypropeeni</td>
+						<td>PP</td>
+					</tr>
+					<tr>
+						<td>polystyreeni</td>
+						<td>PS</td>
+					</tr>
+					<tr>
+						<td>polysulfoni</td>
+						<td>PSU</td>
+					</tr>
+					<tr>
+						<td>polytetrafluorieteeni (Teflon)</td>
+						<td>PTFE</td>
+					</tr>
+					<tr>
+						<td>polyuretaani</td>
+						<td>PU / PUR</td>
+					</tr>
+					<tr>
+						<td>polyvinyyliasetaatti</td>
+						<td>PVAc</td>
+					</tr>
+					<tr>
+						<td>polyvinyylialkoholi</td>
+						<td>PVAl / PVOH</td>
+					</tr>
+					<tr>
+						<td>polyvinyylikloridi</td>
+						<td>PVC</td>
+					</tr>
+					<tr>
+						<td>styreeni/butadieenikumi</td>
+						<td>SBR</td>
+					</tr>
+					<tr>
+						<td>styreeni/butadieeni/styreeni</td>
+						<td>SBS</td>
+					</tr>
+					<tr>
+						<td>styreeni/eteeni/butyleeni/styreeni</td>
+						<td>SEBS</td>
+					</tr>
+					<tr>
+						<td>silikoni</td>
+						<td>SI</td>
+					</tr>
+					<tr>
+						<td>polyamidipohjainen termoelasti</td>
+						<td>TPE-A</td>
+					</tr>
+					<tr>
+						<td>kopolyesteripohjainen termoelasti</td>
+						<td>TPE-E</td>
+					</tr>
+					<tr>
+						<td>polyolefiinipohjainen termoelasti</td>
+						<td>TPE-O</td>
+					</tr>
+					<tr>
+						<td>styreenilohkokopolymeerinen termoelasti</td>
+						<td>TPE-S</td>
+					</tr>
+					<tr>
+						<td>polyuretaanipohjainen termoelasti</td>
+						<td>TPE-U</td>
+					</tr>
+					<tr>
+						<td>ureaformaldehydi</td>
+						<td>UF</td>
+					</tr>
+					<tr>
+						<td>tyydyttymätön polyesteri</td>
+						<td>UP</td>
+					</tr>
+				</table>
+				
+				<br> <!-- table:n margin-bottom: 30px; ei toimi Edgessä?? Purkkaratkaisu ettei taulukko ole sivun alareunassa kiinni-->
+				
 			</section>
 		</main>
-		
-		<footer>
-			<p>© 2024 Elias Rajala</p>
-		</footer>
-		
+
 		<script>
 			const hamburgerBtn = document.querySelector('.hamburger_btn')
 			const hamburgerBtnIcon = document.querySelector('hamburger_btn i')
